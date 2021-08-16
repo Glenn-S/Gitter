@@ -1,0 +1,19 @@
+version: '3.7'
+
+dotenv: [ '.env', '.env.local' ]
+
+vars:
+  SOLUTION: gitter
+
+silent: true
+
+tasks:
+  up:
+    desc: "Begins the electron app"
+    cmds:
+      - yarn start
+
+  compile: 
+    desc: "Compiles the electron app into an executable package."
+    cmds:
+      - yarn make
