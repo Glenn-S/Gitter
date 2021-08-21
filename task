@@ -5,7 +5,7 @@ OS="$(uname -s -m)"
 
 case "$OS" in
 
-   Darwin) OSEXT="mac";;
+   Darwin*) OSEXT="mac";;
    "Linux x86_64") OSEXT="lin_x64";;
    CYGWIN*|MINGW32*|MINGW64*|MSYS*) OSEXT="exe";;
 
@@ -18,7 +18,7 @@ if [ -z "$OSEXT" ]; then
 fi
 
 if [[ -z "$@" ]]; then
-    internals/task/task.$OSEXT -l
+    ./internals/task/task.$OSEXT -l
 else
-    internals/task/task.$OSEXT $@
+    ./internals/task/task.$OSEXT $@
 fi
