@@ -12,6 +12,11 @@ tasks:
     desc: "Begins the electron app"
     cmds:
       - yarn start
+  
+  storybook:
+    desc: "Begins storybook"
+    cmds:
+      - yarn storybook
 
   compile: 
     desc: "Compiles the electron app into an executable package."
