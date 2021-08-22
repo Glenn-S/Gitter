@@ -1,7 +1,7 @@
 import { ipcMain } from "electron";
 import { GitLogFormat, GIT_LOG_FORMAT } from "./git-constants";
 import { execAsync, ExecResponse } from "../../utils/process";
-import { IPC_REQUEST } from "../ipc-constants";
+import { IPC_REQUEST } from "../ipc/ipc-constants";
 
 /**
  * Makes request to get the commit logs 
