@@ -7,7 +7,7 @@ Simple hookup of react to allow electron to be rendered using react.
 */
 ReactDOM.render(
   <React.StrictMode>
-    <App/>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
