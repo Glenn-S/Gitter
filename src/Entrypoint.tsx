@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./components/App";
+import App from "./pages/App";
 
 /*
 Simple hookup of react to allow electron to be rendered using react.

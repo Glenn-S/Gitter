@@ -1,7 +1,7 @@
 import { ReactElement, useCallback, useState } from "react";
 import { GitClient } from "../git/git-client";
 import { GitLogFormat } from '../git/git-constants';
-import { Sidebar } from "./Sidebar/Sidebar";
+import { Sidebar } from "../components/Sidebar/Sidebar";
 
 const App = () : ReactElement => {
   return (
