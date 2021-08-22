@@ -1,4 +1,4 @@
-import { IPC_REQUEST } from "../common/ipc-constants";
+import { IPC_REQUEST } from "../ipc/ipc-constants";
 import { GitLogFormat } from "./git-constants";
 const { ipcRenderer } = window.require("electron");
 

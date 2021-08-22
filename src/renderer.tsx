@@ -10,23 +10,19 @@
  * more about security risks here:
  *
  * https://electronjs.org/docs/tutorial/security
- *
- * To enable Node.js integration in this file, open up `main.js` and enable the `nodeIntegration`
- * flag:
- *
- * ```
- *  // Create the browser window.
- *  mainWindow = new BrowserWindow({
- *    width: 800,
- *    height: 600,
- *    webPreferences: {
- *      nodeIntegration: true
- *    }
- *  });
- * ```
- */
+*/
 
-import './index.css';
-import './Entrypoint';
+import './reset.css';
+import './app.global.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './pages/App';
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
 console.log('👋 This message is being logged by "renderer.js", included via webpack');
