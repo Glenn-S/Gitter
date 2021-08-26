@@ -6,6 +6,7 @@
   "main": ".webpack/main",
   "scripts": {
     "start": "electron-forge start",
+    "start:dev": "concurrently \"yarn start\" \"yarn storybook\"",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
@@ -83,6 +84,7 @@
     "@typescript-eslint/parser": "^4.0.1",
     "@vercel/webpack-asset-relocator-loader": "1.6.0",
     "babel-loader": "^8.2.2",
+    "concurrently": "^6.2.1",
     "css-loader": "^6.0.0",
     "electron": "13.1.9",
     "eslint": "^7.6.0",
